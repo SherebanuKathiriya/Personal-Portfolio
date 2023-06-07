@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherebanu's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&family=Source+Serif+Pro:wght@300;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Sherebanu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript:void(0)" id="about_sec">About</a></li> <!-- dummy link. -->
+                    <li><a href="javascript:void(0)" id="projects_sec">Projects</a></li>
+                    <li><a href="javascript:void(0)" id="contactme_sec">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstSection">
+            <div class="leftSection">Hi. My name is <span class="name">Sherebanu</span>
+                <div>and I am a
+                    <div><span id="element"></span></div>
+                    <br>
+                    <button class="btn" onclick="viewPDF()">View Resume</button>
+                    <button class="btn" onclick="redirectToPage()">Visit Github Profile</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <section id="myaboutDiv">
+            <h2 class="section-heading">About Me</h2>
+            <div class="secondSection">
+                <div class="leftSection">
+                    <img src="image-nobg.png" alt="My Photo">
+                </div>
+                <div class="rightSection">
+                    <p>Hello there! I'm Sherebanu, a dedicated Java developer with a passion for building robust and scalable software solutions. I thrive on the challenges of coding and enjoy crafting efficient and elegant Java applications.
+                        <br><br>
+                        Collaboration is an essential aspect of my work, and I value effective communication and teamwork. I enjoy collaborating with cross-functional teams to deliver high-quality software solutions that meet the needs of clients and end-users. I'm always excited to tackle new challenges and leverage my skills to contribute to meaningful projects.
+                        <br><br>
+                        Thank you for taking the time to explore my portfolio. If you have any Java-related projects or opportunities, I'd be thrilled to discuss how I can contribute. Feel free to reach out to me, and let's create exceptional software together!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id= "myprojectsdiv" class="projects-section">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="projects-grid">
+              <div class="project">
+                <h3 class="project-name"><a href="https://github.com/SherebanuKathiriya/hospital_database_system">Hospital Database Management System</a></h3>
+                <p class="project-description">Users from the hospital database can perform CRUD operations. The pharmacist can produce a sales report. A pharmacist can read a prescription that a doctor has added for a specific patient. I have used Java and MySQL database systems. This system does not contain any attractive UI design</p>
+              </div>
+              <div class="project">
+                <h3 class="project-name"><a href="https://github.com/SherebanuKathiriya/EmployeeManagement ">Employee Management API</a></h3>
+                <p class="project-description">This project provides a REST API with CRUD capabilities for Employees that is built on Spring Boot and MySQL. Spring Security adds Basic Authentication. Additionally, test cases were created.</p>
+              </div>
+              <div class="project">
+                <h3 class="project-name"><a href="https://github.com/SherebanuKathiriya/UserLocationAPI ">User Location API</a></h3>
+                <p class="project-description">This project involves creating a Spring Boot REST API with CRUD functionality for two user roles, creating and updating a database table using HSQL and JDBC Template, and returning a list of the N nearest users from a given location.</p>
+              </div>
+              <div class="project">
+                <h3 class="project-name"><a href="https://github.com/SherebanuKathiriya/Registration-Login-API ">Resgistration-Login-API</a></h3>
+                <p class="project-description">Registration-Login-API is a Spring Boot application that provides login and signup functionality using H2 database, Spring Security, Spring Data JPA, and Thymeleaf. It allows users to securely create an account, login, and access a dashboard page.</p>
+              </div>
+              <div class="project">
+                <h3 class="project-name"><a href="https://github.com/SherebanuKathiriya/CollegeDetailsAPI">College Details API</a></h3>
+                <p class="project-description">This project is a REST API built with Spring Boot and MySQL, which allows users to retrieve information about colleges and their courses. The API provides two endpoints: one to retrieve a list of all colleges and their associated details, and another to retrieve information about a specific college and its associated courses.</p>
+              </div>
+            </div>
+          </section>
+          
+          <section id="contactmediv" class="contact-section">
+            <h2 class="section-heading">Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://mail.google.com/mail/?view=cm&to=sherebanukathiriya123@gmail.com&su=Hello%20from%20Portfolio" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+              <a href="https://www.facebook.com/sherebanu.kathiriya" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
+          </section>
+          
+    </main>
+    <footer>
+        <p>&copy; 2023 Sherebanu Kathiriya. All rights reserved.</p>
+      </footer>
+      
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
