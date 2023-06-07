@@ -1,6 +1,3 @@
-Certainly! Here's an example description that you can add to your README file:
-
----
 
 # Sherebanu's Portfolio
 
